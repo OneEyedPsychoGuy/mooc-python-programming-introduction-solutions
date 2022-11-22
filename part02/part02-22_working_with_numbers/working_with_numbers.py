@@ -11,3 +11,4 @@ while True:
 
 print(f"Numbers typed in {count}")
 print(f"The sum of the numbers is {sum}")
+print(f"The mean of the numbers is {sum / count}")
