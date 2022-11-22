@@ -1,4 +1,5 @@
 count = 0
+sum = 0
 
 print("Please type in integer numbers. Type in 0 to finish.")
 while True:
@@ -6,5 +7,7 @@ while True:
     if num == 0:
         break
     count += 1
+    sum += num
 
 print(f"Numbers typed in {count}")
+print(f"The sum of the numbers is {sum}")
