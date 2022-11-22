@@ -5,4 +5,4 @@ if year % 400 == 0:
 elif year % 4 == 0 and year % 100 != 0:
     print("This year is a leap year.")
 else:
-    print("Thiss year is not a leap year.")
+    print("This year is not a leap year.")
