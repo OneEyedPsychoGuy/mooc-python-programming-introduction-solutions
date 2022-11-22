@@ -1,9 +1,10 @@
-story = ""
+story, prev = "", ""
 
 while True:
-    word = input("Please type in a word: ")
-    if word == "end":
+    next = input("Please type in a word: ")
+    if next == prev or next == "end":
         break
-    story += word + " "
+    prev = next
+    story += next + " "
 
 print(story)
