@@ -31,10 +31,23 @@ def print_student(students: dict, name: str) -> None:
     else:
         print(f"{name}: no such person in the database")
 
-students = {}
-add_student(students, "Peter")
-add_course(students, "Peter", ("Introduction to Programming", 3))
-add_course(students, "Peter", ("Advanced Course in Programming", 2))
-add_course(students, "Peter", ("Data Structures and Algorithms", 0))
-add_course(students, "Peter", ("Introduction to Programming", 2))
-print_student(students, "Peter")
+def summary(students: dict):
+    most_courses = ""
+    best_average = 0
+    best_average_name = ""
+    for name in students:
+        if len(students[name]) > len(students.get(most_courses, [])):
+            most_courses = name
+        
+        sum = 0
+        for course in students[name]:
+            sum += course[1]
+        
+        average = sum / len(students[name])
+        if average > best_average:
+            best_average = average
+            best_average_name = name
+        
+    print(f"students {len(students)}")
+    print(f"most courses completed {len(students[most_courses])} {most_courses}")
+    print(f"best average grade {best_average} {best_average_name}")
