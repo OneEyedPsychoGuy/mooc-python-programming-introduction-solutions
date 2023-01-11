@@ -1,11 +1,11 @@
-year = int(input("Year: "))
-next = year
+start = int(input("Year: "))
+year = start
 
 while True:
-    next += 1
-    if next % 400 == 0:
+    year += 1
+    if year % 400 == 0:
         break
-    elif next % 4 == 0 and next % 100 != 0:
+    elif year % 4 == 0 and year % 100 != 0:
         break
     
-print(f"The next leap year after {year} is {next}")
+print(f"The next leap year after {start} is {year}")
