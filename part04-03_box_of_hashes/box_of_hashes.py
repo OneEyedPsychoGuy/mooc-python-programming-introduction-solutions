@@ -1,9 +1,9 @@
-def line(times, characters):
-    if characters == "":
-        characters = "*"
-    print(characters[0] * times)
+def line(times: int, character: str):
+    if character == "":
+        character = "*"
+    print(character[0] * times)
 
-def box_of_hashes(height):
+def box_of_hashes(height: int):
     while height > 0:
         line(10, "#")
         height -= 1
