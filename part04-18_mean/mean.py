@@ -1,2 +1,2 @@
-def mean(numbers):
-    return sum(numbers) / len(numbers)
+def mean(nums):
+    return sum(nums) / len(nums)
