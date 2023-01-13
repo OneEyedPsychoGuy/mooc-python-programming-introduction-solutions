@@ -1,2 +1,2 @@
-def range_of_list(nums):
+def range_of_list(nums: list[int]):
     return max(nums) - min(nums)
