@@ -1,4 +1,4 @@
-def greatest_number(num1, num2, num3):
+def greatest_number(num1: int, num2: int, num3: int):
     greatest = num1
     if num2 >= num1 and num2 >= num3:
         greatest = num2
