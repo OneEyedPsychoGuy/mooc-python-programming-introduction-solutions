@@ -1,11 +1,11 @@
-numbers = []
+nums = []
 while True:
-    print(f"The list is now {numbers}")
+    print(f"The list is now {nums}")
     command = input("a(d)d, (r)emove or e(x)it: ")
     if command == "d":
-        numbers.append(len(numbers) + 1)
+        nums.append(len(nums) + 1)
     elif command == "r":
-        numbers.pop()
+        nums.pop()
     elif command == "x":
         print("Bye!")
         break
