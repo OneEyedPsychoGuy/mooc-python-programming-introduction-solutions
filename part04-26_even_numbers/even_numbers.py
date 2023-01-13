@@ -1,6 +1,6 @@
-def even_numbers(numbers):
-    even_numbers = []
-    for num in numbers:
+def even_numbers(nums: list[int]):
+    even_nums = []
+    for num in nums:
         if num % 2 == 0:
-            even_numbers.append(num)
-    return even_numbers
+            even_nums.append(num)
+    return even_nums
