@@ -1,2 +1,2 @@
-def anagrams(word1, word2):
+def anagrams(word1: str, word2: str):
     return sorted(word1) == sorted(word2)
