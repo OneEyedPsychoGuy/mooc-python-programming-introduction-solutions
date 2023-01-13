@@ -1,4 +1,4 @@
-def same_chars(word, index1, index2):
+def same_chars(word: str, index1: int, index2: int):
     if index1 >= len(word) or index2 >= len(word):
         return False
     return word[index1] == word[index2]
