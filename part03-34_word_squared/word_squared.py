@@ -1,4 +1,4 @@
-def squared(text, size):
+def squared(text: str, size: int):
     rows = 0
     index = 0
     while rows < size:
