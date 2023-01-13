@@ -1,6 +1,6 @@
-def shortest(words):
+def shortest(words: list[str]):
     shortest = ""
     for word in words:
-        if len(word) < len(shortest) or shortest == "":
+        if shortest == "" or len(word) < len(shortest):
             shortest = word
     return shortest
