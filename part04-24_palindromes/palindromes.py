@@ -1,4 +1,4 @@
-def palindromes(word):
+def palindromes(word: str):
     return word == word[::-1]
 
 while True:
