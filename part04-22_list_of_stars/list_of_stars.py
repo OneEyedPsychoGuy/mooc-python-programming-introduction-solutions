@@ -1,3 +1,3 @@
-def list_of_stars(numbers):
-    for num in numbers:
+def list_of_stars(nums):
+    for num in nums:
         print("*" * num)
