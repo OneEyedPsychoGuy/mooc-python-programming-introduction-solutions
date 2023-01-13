@@ -1,5 +1,5 @@
-def list_sum(numbers1, numbers2):
+def list_sum(nums1: list[int], nums2: list[int]):
     sums = []
-    for i in range(len(numbers1)):
-        sums.append(numbers1[i] + numbers2[i])
+    for i in range(len(nums1)):
+        sums.append(nums1[i] + nums2[i])
     return sums
