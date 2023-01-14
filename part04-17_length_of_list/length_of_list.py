@@ -1,2 +1,2 @@
-def length(list: list):
+def length(list: list) -> int:
     return len(list)
