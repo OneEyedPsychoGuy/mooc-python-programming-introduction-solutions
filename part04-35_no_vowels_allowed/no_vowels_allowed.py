@@ -1,4 +1,4 @@
-def no_vowels(string):
+def no_vowels(string: str):
     vowels = "aeiou"
     for vowel in vowels:
         string = string.replace(vowel, "")
