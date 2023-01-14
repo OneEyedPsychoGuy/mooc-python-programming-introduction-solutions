@@ -1,6 +1,6 @@
-def most_common_character(string):
-    most = ""
+def most_common_character(string: str):
+    common = string[0]
     for char in string:
-        if most == "" or string.count(char) > string.count(most):
-            most = char
-    return most
+        if string.count(char) > string.count(common):
+            common = char
+    return common
