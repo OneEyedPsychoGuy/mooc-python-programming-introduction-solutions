@@ -1,4 +1,4 @@
-def even_numbers(nums: list[int]):
+def even_numbers(nums: list[int]) -> list[int]:
     even_nums = []
     for num in nums:
         if num % 2 == 0:
