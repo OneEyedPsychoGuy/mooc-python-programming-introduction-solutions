@@ -1,4 +1,4 @@
-def longest_series_of_neighbours(nums: list[int]):
+def longest_series_of_neighbours(nums: list[int]) -> int:
     longest = 1
     length = 1
 
