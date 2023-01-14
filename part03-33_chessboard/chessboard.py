@@ -1,4 +1,4 @@
-def chessboard(length: int):
+def chessboard(length: int) -> None:
     rows = 0
     while rows < length:
         if rows % 2 == 0:
