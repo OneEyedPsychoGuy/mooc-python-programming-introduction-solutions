@@ -1,4 +1,4 @@
-def squared(text: str, size: int):
+def squared(text: str, size: int) -> None:
     rows = 0
     index = 0
     while rows < size:
