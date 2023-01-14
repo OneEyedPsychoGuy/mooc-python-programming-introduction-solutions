@@ -1,4 +1,4 @@
-def spruce(size: int):
+def spruce(size: int) -> None:
     print("a spruce!")
     rows = 1
     while rows <= size:
