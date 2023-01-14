@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     course_points = input_course_points()
     points_sum = 0
     passes = 0
@@ -31,9 +31,7 @@ def total_points(points: list[int]) -> int:
     return points[0] + (points[1] // 10)
 
 def passed(points: list[int]) -> bool:
-    if points[0] < 10 or total_points(points) < 15:
-        return False
-    return True
+    return points[0] >= 10 and total_points(points) >= 15
 
 def grade(points: list[int]) -> int:
     if points[0] < 10:
