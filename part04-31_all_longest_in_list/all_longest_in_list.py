@@ -1,4 +1,4 @@
-def all_the_longest(words):
+def all_the_longest(words: list[str]):
     longest_words = []
     longest = -1
 
