@@ -1,4 +1,4 @@
-def formatted(floats: list[float]):
+def formatted(floats: list[float]) -> list[str]:
     formatted = []
     for num in floats:
         formatted.append(f"{num:.2f}")
