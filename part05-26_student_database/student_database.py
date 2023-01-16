@@ -1,7 +1,7 @@
-def add_student(students: dict, name: str) -> None:
+def add_student(students: dict[str, list[tuple[str, int]]], name: str) -> None:
     students[name] = []
 
-def add_course(students: dict, name: str, course_to_add: tuple[str, int]) -> None:
+def add_course(students: dict[str, list[tuple[str, int]]], name: str, course_to_add: tuple[str, int]) -> None:
     if course_to_add[1] == 0:
         return
     
@@ -14,7 +14,7 @@ def add_course(students: dict, name: str, course_to_add: tuple[str, int]) -> Non
                 break
     students[name].append(course_to_add)
 
-def print_student(students: dict, name: str) -> None:
+def print_student(students: dict[str, list[tuple[str, int]]], name: str) -> None:
     if name in students:
         text = f"{name}:\n "
         courses = students[name]
@@ -31,7 +31,7 @@ def print_student(students: dict, name: str) -> None:
     else:
         print(f"{name}: no such person in the database")
 
-def summary(students: dict):
+def summary(students: dict[str, list[tuple[str, int]]]):
     most_courses = ""
     best_average = 0
     best_average_name = ""
